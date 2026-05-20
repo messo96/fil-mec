@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Fil-MeC La Mia Merceria - Merceria all'ingrosso dal 1950. Esperienza, consulenza e cortesia da tre generazioni. Famiglia Soldati, Cesena.">
+  <title>Fil-MeC | La Mia MerceriA - Dal 1950</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <div class="container">
+      <span class="topbar-text">La merceri<em>A</em> con la A maiuscol<em>A</em> per esperienz<em>A</em>,
+        consulenz<em>A</em> e cortesi<em>A</em></span>
+      <div class="topbar-socials">
+        <a href="https://www.facebook.com/FilMec" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="white" stroke="none">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/filmecmerceria/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="white" stroke-width="2">
+            <rect x="2" y="2" width="20" height="20" rx="5" />
+            <circle cx="12" cy="12" r="5" />
+            <circle cx="17.5" cy="6.5" r="1.5" fill="white" stroke="none" />
+          </svg>
+        </a>
+        <a href="https://www.youtube.com/channel/UC3NHZdohU-Z2zlPI6RCaaJg" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="white" stroke="none">
+            <path
+              d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43zM9.75 15.02V8.48l5.75 3.27-5.75 3.27z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="#" class="logo-wrapper">
+        <img src="assets/logo.png" alt="Fil-MeC Logo">
+        <div class="logo-text">
+          <span class="brand-name">Fil-MeC</span>
+          <span class="brand-sub">La Mia MerceriA</span>
+        </div>
+      </a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#chi-siamo">Chi Siamo</a></li>
+          <li><a href="#servizi">Servizi</a></li>
+          <li><a href="#storia">La Nostra Storia</a></li>
+          <li><a href="#contatti" class="nav-cta">Contattaci</a></li>
+        </ul>
+      </nav>
+      <!-- SEARCH WIDGET -->
+      <div class="search-widget" id="searchWidget">
+        <button class="search-toggle" id="searchToggle" aria-label="Cerca prodotti">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"/>
+            <path d="M21 21l-4.35-4.35"/>
+          </svg>
+        </button>
+        <div class="search-bar" id="searchBar">
+          <input type="text" id="searchInput" placeholder="Cerca un prodotto..." autocomplete="off">
+          <div class="search-results" id="searchResults"></div>
+        </div>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Apri menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="search-overlay" id="searchOverlay"></div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="chi-siamo">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="star">★</span> Partner affidabile dal 1950
+        </div>
+        <h1 class="hero-title">
+          La merceria con la <span class="highlight">A maiuscola</span>
+        </h1>
+        <p class="hero-description">
+          Da tre generazioni, la famiglia Soldati è sinonimo di qualità, esperienza e passione nel mondo della merceria
+          all'ingrosso. Il nostro impegno è offrire il meglio per la vostra creatività.
+        </p>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="stat-number">75+</div>
+            <div class="stat-label">Anni di esperienza</div>
+          </div>
+          <div class="hero-stat">
+            <div class="stat-number">3</div>
+            <div class="stat-label">Generazioni</div>
+          </div>
+          <div class="hero-stat">
+            <div class="stat-number">10+</div>
+            <div class="stat-label">Regioni servite</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="hero-image-main">
+          <img src="assets/negozio-front.png" alt="Fil-MeC - Ingresso del negozio">
+        </div>
+        <div class="hero-image-float">
+          <img src="assets/negozio-intern.png" alt="Fil-MeC - Interno del negozio" onclick="openLightbox(this)" style="cursor: zoom-in;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="servizi">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">I nostri punti di forza</span>
+        <h2 class="section-title">Perché scegliere Fil-MeC</h2>
+        <p class="section-subtitle">Valori che ci guidano da oltre 75 anni e che rendono unica la nostra merceria.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+            </svg>
+          </div>
+          <h3>Vasto Assortimento</h3>
+          <p>Articoli in continuo aggiornamento per intercettare i bisogni della clientela e le mode del momento.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+            </svg>
+          </div>
+          <h3>Esperienza</h3>
+          <p>Tre generazioni di passione e competenza nel settore della merceria all'ingrosso.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+            </svg>
+          </div>
+          <h3>Consulenza</h3>
+          <p>Un team preparato e disponibile, sempre pronto a guidarvi nella scelta dei prodotti migliori.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3" />
+            </svg>
+          </div>
+          <h3>Cortesia</h3>
+          <p>La cortesia con la A maiuscola: accoglienza e attenzione al cliente sono nel nostro DNA.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORIA -->
+  <section class="storia" id="storia">
+    <div class="container">
+      <div class="storia-images reveal">
+        <div class="storia-img-main">
+          <img src="assets/negozio-intern.png" alt="Interno del negozio Fil-MeC" onclick="openLightbox(this)" style="cursor: zoom-in;">
+        </div>
+        <div class="storia-img-badge">
+          <div class="badge-number">1950</div>
+          <div class="badge-text">Anno di fondazione</div>
+        </div>
+      </div>
+      <div class="storia-content reveal">
+        <span class="section-label">La nostra storia</span>
+        <h2 class="section-title">Una passione che dura da tre generazioni</h2>
+        <p class="storia-text">
+          La famiglia Soldati è presente nel settore della merceria all'ingrosso <strong>dal 1950</strong> con la ditta
+          di Michele Soldati. Nel 1980 suo figlio Walther apre Fil-MeC "La mia Merceria" all'interno del centro
+          commerciale Coming, attuale sede dell'azienda.
+        </p>
+        <p class="storia-text">
+          Oggi Fil-MeC è gestita dai figli di Walther, <strong>Cesare e Sandro</strong>: con il supporto di un team di
+          lavoro preparato e disponibile continuano a rifornire decine di attività sul territorio emiliano-romagnolo, in
+          Toscana, Lazio, Marche, Triveneto e nelle Isole.
+        </p>
+        <blockquote class="storia-quote">
+          "Amiamo il mondo della merceria da tre generazioni. Per noi non è solo un mestiere, è la nostra storia!"
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ATTESTATO -->
+  <section class="attestato reveal" id="attestato">
+    <div class="container">
+      <span class="section-label">Riconoscimenti</span>
+      <h2 class="section-title">50 anni di eccellenza riconosciuta</h2>
+      <p class="section-subtitle" style="margin: 0 auto;">Premiati da Confesercenti Cesenate per i 50 anni di attività
+        vissuti insieme.</p>
+      <div class="attestato-wrapper">
+        <div class="attestato-decoration top-left"></div>
+        <div class="attestato-decoration bottom-right"></div>
+        <div class="attestato-img">
+          <img src="assets/attestato.png" alt="Attestato Confesercenti - 50 anni di attività">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contatti">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <div class="logo-wrapper">
+            <img src="assets/logo.png" alt="Fil-MeC Logo">
+          </div>
+          <p>"Fil-Mec La Mia Merceria" è partner affidabile per esperienza cortesia consulenza con un vasto assortimento
+            su tutta la gamma di articoli del magico mondo della merceria.</p>
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/FilMec" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/filmecmerceria/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24">
+                <rect x="2" y="2" width="20" height="20" rx="5" />
+                <circle cx="12" cy="12" r="5" />
+                <circle cx="17.5" cy="6.5" r="1.5" />
+              </svg>
+            </a>
+            <a href="https://www.youtube.com/channel/UC3NHZdohU-Z2zlPI6RCaaJg" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43zM9.75 15.02V8.48l5.75 3.27-5.75 3.27z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!-- Azienda Column -->
+        <div>
+          <h4 class="footer-title">Azienda</h4>
+          <ul class="footer-links">
+            <li><a href="#chi-siamo">Chi Siamo</a></li>
+            <li><a href="#servizi">I Nostri Servizi</a></li>
+            <li><a href="#storia">La Nostra Storia</a></li>
+            <li><a href="#attestato">Riconoscimenti</a></li>
+          </ul>
+        </div>
+        <!-- Contatti Column -->
+        <div>
+          <h4 class="footer-title">Contatti</h4>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            <span>Via Quinto Bucci, 323<br>c/o Centro Commerciale Coming<br>47521 Cesena (FC) Italia</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+            <span>Tel. +39 0547 384634<br>Fax. +39 0547 632199</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            <a href="mailto:filmec@fil-mec.com">filmec@fil-mec.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; padding: 20px 0;">
+        <span>&copy; 2020 Copyright Filmec s.a.s F.lli Soldati P.IVA C.F. 01154590408 - R.E.A. 29563 FO - Iscr.Reg.Impr. Forlì 8511 - Cap.Soc. &euro; 25.822,84 i.v.</span>
+        <a href="#admin" class="admin-link-discreet" id="adminLinkDiscreet" aria-label="Area Riservata">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" style="opacity: 0.4; transition: opacity 0.3s, transform 0.3s; vertical-align: middle;">
+            <circle cx="12" cy="12" r="3"/>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== IMAGE LIGHTBOX ===== -->
+  <div class="lightbox-overlay" id="lightboxOverlay" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()" aria-label="Chiudi">&times;</button>
+    <div class="lightbox-inner" onclick="event.stopPropagation()">
+      <img id="lightboxImg" src="" alt="">
+    </div>
+  </div>
+
+  <!-- ===== PRODUCT DETAIL POPUP ===== -->
+  <div class="product-popup-overlay" id="productPopupOverlay" onclick="closeProductPopup(event)">
+    <div class="product-popup" id="productPopup">
+      <div class="product-popup-image">
+        <img id="popupImage" src="" alt="">
+        <div class="product-popup-image-overlay"></div>
+        <span class="product-popup-badge" id="popupCategory"></span>
+        <button class="product-popup-close" onclick="closeProductPopupDirect()" aria-label="Chiudi">&times;</button>
+      </div>
+      <div class="product-popup-body">
+        <div class="product-popup-meta">
+          <span class="product-popup-category" id="popupCategoryMeta"></span>
+          <span class="product-popup-code" id="popupCode"></span>
+        </div>
+        <h2 class="product-popup-title" id="popupTitle"></h2>
+        <p class="product-popup-description" id="popupDesc"></p>
+        <div class="product-popup-footer">
+          <div class="product-popup-price">
+            <span class="product-popup-price-label">Prezzo</span>
+            <span class="product-popup-price-value" id="popupPrice"></span>
+          </div>
+          <a href="#contatti" class="product-popup-cta" onclick="closeProductPopupDirect()">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.82 12.7a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.77 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            Richiedi Informazioni
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= AREA ADMIN MARKUP ================= -->
+  <!-- MODAL ACCESSO ADMIN -->
+  <div class="admin-modal" id="adminLoginModal">
+    <div class="admin-modal-content login-content">
+      <div class="admin-modal-header">
+        <h3>Area Riservata Admin</h3>
+        <button class="admin-modal-close" onclick="closeAdminLogin()">&times;</button>
+      </div>
+      <div class="admin-modal-body">
+        <p>Inserisci la password di sicurezza per accedere alla gestione dei prodotti.</p>
+        <div class="form-group">
+          <label for="adminPassword">Chiave d'Accesso</label>
+          <input type="password" id="adminPassword" placeholder="••••••••" autocomplete="current-password">
+          <div class="error-message" id="loginErrorMessage">Password non corretta. Riprova.</div>
+        </div>
+        <button class="btn btn-gold" style="width:100%; margin-top: 10px;" onclick="submitAdminLogin()">Accedi</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- PANNELLO DASHBOARD ADMIN PRINCIPALE -->
+  <div class="admin-panel-overlay" id="adminPanel">
+    <div class="admin-panel-container">
+      <!-- Admin Header -->
+      <header class="admin-header">
+        <div class="admin-brand">
+          <img src="assets/logo.png" alt="Fil-MeC Logo" class="admin-logo-img">
+          <div>
+            <h2>Fil-MeC | Dashboard Prodotti</h2>
+            <span>Pannello di Controllo e Selezione Ricerca</span>
+          </div>
+        </div>
+        <div class="admin-header-actions">
+          <button class="btn btn-outline btn-sm" onclick="closeAdminDashboard()">Esci dalla Dashboard</button>
+        </div>
+      </header>
+
+      <!-- Stats Grid -->
+      <div class="admin-stats-grid">
+        <div class="admin-stat-card">
+          <div class="admin-stat-icon font-gold">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+            </svg>
+          </div>
+          <div class="admin-stat-info">
+            <span class="admin-stat-val" id="statTotalProducts">0</span>
+            <span class="admin-stat-label">Prodotti Totali</span>
+          </div>
+        </div>
+        <div class="admin-stat-card">
+          <div class="admin-stat-icon text-success">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+              <polyline points="22 4 12 14.01 9 11.01"/>
+            </svg>
+          </div>
+          <div class="admin-stat-info">
+            <span class="admin-stat-val" id="statActiveProducts">0</span>
+            <span class="admin-stat-label">Visibili in Ricerca</span>
+          </div>
+        </div>
+        <div class="admin-stat-card">
+          <div class="admin-stat-icon text-danger">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="15" y1="9" x2="9" y2="15"/>
+              <line x1="9" y1="9" x2="15" y2="15"/>
+            </svg>
+          </div>
+          <div class="admin-stat-info">
+            <span class="admin-stat-val" id="statHiddenProducts">0</span>
+            <span class="admin-stat-label">Nascosti da Ricerca</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls & Actions Bar -->
+      <div class="admin-controls-bar">
+        <div class="admin-filters">
+          <div class="search-input-wrapper">
+            <input type="text" id="adminSearchInput" placeholder="Filtra per nome o codice..." oninput="filterAdminProducts()">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" class="search-icon-inner">
+              <circle cx="11" cy="11" r="8"/>
+              <path d="M21 21l-4.35-4.35"/>
+            </svg>
+          </div>
+          <select id="adminCategorySelect" onchange="filterAdminProducts()">
+            <option value="ALL">Tutte le Categorie</option>
+            <option value="Fili">Fili</option>
+            <option value="Bottoni">Bottoni</option>
+            <option value="Cerniere">Cerniere</option>
+            <option value="Nastri">Nastri</option>
+            <option value="Forbici">Forbici</option>
+            <option value="Aghi e Spille">Aghi e Spille</option>
+            <option value="Elastici">Elastici</option>
+            <option value="Uncinetti e Ferri">Uncinetti e Ferri</option>
+            <option value="Accessori">Accessori</option>
+          </select>
+        </div>
+        <div class="admin-actions">
+          <button class="btn btn-gold btn-sm" onclick="openAddProductModal()">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 5px; vertical-align: middle;">
+              <line x1="12" y1="5" x2="12" y2="19"/>
+              <line x1="5" y1="12" x2="19" y2="12"/>
+            </svg> Aggiungi Prodotto
+          </button>
+          <button class="btn btn-outline btn-sm" onclick="exportProductsJSON()">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 5px; vertical-align: middle;">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg> Esporta (JSON)
+          </button>
+          <button class="btn btn-outline btn-sm" onclick="openImportModal()">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 5px; vertical-align: middle;">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="17 8 12 3 7 8"/>
+              <line x1="12" y1="3" x2="12" y2="15"/>
+            </svg> Importa (JSON)
+          </button>
+          <button class="btn btn-danger-outline btn-sm" onclick="triggerResetToDefault()">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 5px; vertical-align: middle;">
+              <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+            </svg> Ripristina
+          </button>
+        </div>
+      </div>
+
+      <!-- Products Display Table -->
+      <div class="admin-table-container">
+        <table class="admin-products-table" id="adminProductsTable">
+          <thead>
+            <tr>
+              <th width="80">Foto</th>
+              <th width="150">Codice</th>
+              <th>Nome Prodotto</th>
+              <th width="150">Categoria</th>
+              <th width="100">Prezzo</th>
+              <th width="120">Visibilità</th>
+              <th width="100">Azioni</th>
+            </tr>
+          </thead>
+          <tbody id="adminProductsList">
+            <!-- Dynamically injected rows -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL INSERIMENTO/MODIFICA PRODOTTO -->
+  <div class="admin-modal" id="productFormModal">
+    <div class="admin-modal-content">
+      <div class="admin-modal-header">
+        <h3 id="productModalTitle">Nuovo Prodotto</h3>
+        <button class="admin-modal-close" onclick="closeProductModal()">&times;</button>
+      </div>
+      <div class="admin-modal-body">
+        <form id="productForm" onsubmit="saveProduct(event)">
+          <input type="hidden" id="formOriginalCode">
+          <div class="form-row">
+            <div class="form-group half">
+              <label for="prodCode">Codice Prodotto *</label>
+              <input type="text" id="prodCode" placeholder="FM-FIL-999" required>
+            </div>
+            <div class="form-group half">
+              <label for="prodCategory">Categoria *</label>
+              <select id="prodCategory" required>
+                <option value="Fili">Fili</option>
+                <option value="Bottoni">Bottoni</option>
+                <option value="Cerniere">Cerniere</option>
+                <option value="Nastri">Nastri</option>
+                <option value="Forbici">Forbici</option>
+                <option value="Aghi e Spille">Aghi e Spille</option>
+                <option value="Elastici">Elastici</option>
+                <option value="Uncinetti e Ferri">Uncinetti e Ferri</option>
+                <option value="Accessori">Accessori</option>
+                <option value="Altro">Altro</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="prodName">Nome Prodotto *</label>
+            <input type="text" id="prodName" placeholder="es. Spilli Colorati Extra-Fine" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group half">
+              <label for="prodPrice">Prezzo (€) *</label>
+              <input type="number" id="prodPrice" step="0.01" min="0" placeholder="0.00" required>
+            </div>
+            <div class="form-group half">
+              <label for="prodImageSelect">Immagine Predefinita</label>
+              <select id="prodImageSelect" onchange="syncProductImageInput()">
+                <option value="assets/prod-fili-cucito.png">Fili standard</option>
+                <option value="assets/prod-bottoni.png">Bottoni standard</option>
+                <option value="assets/prod-cerniere.png">Cerniere standard</option>
+                <option value="assets/prod-nastri.png">Nastri standard</option>
+                <option value="assets/prod-forbici.png">Forbici standard</option>
+                <option value="assets/prod-aghi.png">Aghi standard</option>
+                <option value="assets/prod-elastici.png">Elastici standard</option>
+                <option value="assets/prod-uncinetti.png">Uncinetti standard</option>
+                <option value="CUSTOM">Indirizzo personalizzato...</option>
+              </select>
+              <input type="text" id="prodImageCustom" placeholder="assets/custom-img.png" style="display:none; margin-top:8px;">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="prodDesc">Descrizione</label>
+            <textarea id="prodDesc" rows="3" placeholder="Scrivi una breve descrizione delle caratteristiche del prodotto..."></textarea>
+          </div>
+          <div class="form-group checkbox-group">
+            <label class="switch-container">
+              <input type="checkbox" id="prodVisible" checked>
+              <span class="switch-slider"></span>
+            </label>
+            <span class="checkbox-label" onclick="document.getElementById('prodVisible').click()">Mostra questo prodotto nella barra di ricerca pubblica</span>
+          </div>
+          <div class="form-actions">
+            <button type="button" class="btn btn-outline" onclick="closeProductModal()">Annulla</button>
+            <button type="submit" class="btn btn-gold">Salva Prodotto</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL IMPORTAZIONE JSON -->
+  <div class="admin-modal" id="importModal">
+    <div class="admin-modal-content">
+      <div class="admin-modal-header">
+        <h3>Importa Database Prodotti (JSON)</h3>
+        <button class="admin-modal-close" onclick="closeImportModal()">&times;</button>
+      </div>
+      <div class="admin-modal-body">
+        <p>Incolla qui sotto il contenuto del file JSON o dell'esportazione precedente per sovrascrivere o caricare l'elenco dei prodotti.</p>
+        <div class="form-group">
+          <textarea id="importTextarea" rows="10" placeholder="[{ &quot;code&quot;: &quot;...&quot;, &quot;name&quot;: &quot;...&quot;, ... }]" style="font-family: monospace; font-size: 11px; width: 100%; box-sizing: border-box; padding: 10px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.3); color: #fff;"></textarea>
+          <div class="error-message" id="importErrorMessage">Formato JSON non valido. Controlla la sintassi.</div>
+        </div>
+        <div class="form-actions">
+          <button class="btn btn-outline" onclick="closeImportModal()">Annulla</button>
+          <button class="btn btn-gold" onclick="submitImportJSON()">Carica Database</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="products.js"></script>
+  <script>
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+
+    // Scroll reveal animation
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.classList.add('visible');
+          }, index * 100);
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // Smooth scroll for nav links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          navLinks.classList.remove('open');
+        }
+      });
+    });
+
+    // ===== SEARCH WIDGET =====
+    const searchWidget = document.getElementById('searchWidget');
+    const searchToggle = document.getElementById('searchToggle');
+    const searchBar = document.getElementById('searchBar');
+    const searchInput = document.getElementById('searchInput');
+    const searchResults = document.getElementById('searchResults');
+    const searchOverlay = document.getElementById('searchOverlay');
+
+    function openSearch() {
+      searchWidget.classList.add('open');
+      searchOverlay.classList.add('visible');
+      setTimeout(() => searchInput.focus(), 350);
+    }
+
+    function closeSearch() {
+      searchWidget.classList.remove('open');
+      searchOverlay.classList.remove('visible');
+      searchInput.value = '';
+      searchResults.innerHTML = '';
+      searchResults.classList.remove('visible');
+    }
+
+    searchToggle.addEventListener('click', () => {
+      if (searchWidget.classList.contains('open')) {
+        closeSearch();
+      } else {
+        openSearch();
+      }
+    });
+
+
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeSearch();
+    });
+
+    // Search logic with debounce and active visibility filter
+    let searchTimeout;
+    searchInput.addEventListener('input', () => {
+      clearTimeout(searchTimeout);
+      searchTimeout = setTimeout(() => {
+        const query = searchInput.value.trim().toLowerCase();
+        if (query.length < 2) {
+          searchResults.innerHTML = '';
+          searchResults.classList.remove('visible');
+          return;
+        }
+
+        // Filtra escludendo i prodotti con visible === false
+        const matches = products.filter(p =>
+          (p.visible !== false) && (
+            p.name.toLowerCase().includes(query) ||
+            p.description.toLowerCase().includes(query) ||
+            p.code.toLowerCase().includes(query) ||
+            p.category.toLowerCase().includes(query)
+          )
+        ).slice(0, 6);
+
+        if (matches.length === 0) {
+          searchResults.innerHTML = '<div class="search-no-results">Nessun prodotto trovato</div>';
+          searchResults.classList.add('visible');
+          return;
+        }
+
+        searchResults.innerHTML = matches.map(p => `
+          <div class="search-result-card" onclick="openProductPopup('${p.code}')">
+            <div class="search-result-img">
+              <img src="${p.image}" alt="${p.name}">
+            </div>
+            <div class="search-result-info">
+              <span class="search-result-category">${p.category}</span>
+              <h4 class="search-result-name">${highlightMatch(p.name, query)}</h4>
+              <p class="search-result-desc">${p.description}</p>
+              <div class="search-result-meta">
+                <span class="search-result-price">&euro; ${p.price.toFixed(2)}</span>
+                <span class="search-result-code">${p.code}</span>
+              </div>
+            </div>
+          </div>
+        `).join('');
+        searchResults.classList.add('visible');
+      }, 200);
+    });
+
+    function highlightMatch(text, query) {
+      const regex = new RegExp(`(${query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
+      return text.replace(regex, '<mark>$1</mark>');
+    }
+
+    // ===== PRODUCT DETAIL POPUP =====
+    const productPopupOverlay = document.getElementById('productPopupOverlay');
+
+    function openProductPopup(code) {
+      const p = products.find(prod => prod.code === code);
+      if (!p) return;
+
+      document.getElementById('popupImage').src = p.image;
+      document.getElementById('popupImage').alt = p.name;
+      document.getElementById('popupCategory').textContent = p.category;
+      document.getElementById('popupCategoryMeta').textContent = p.category;
+      document.getElementById('popupCode').textContent = p.code;
+      document.getElementById('popupTitle').textContent = p.name;
+      document.getElementById('popupDesc').textContent = p.description || 'Nessuna descrizione disponibile.';
+      document.getElementById('popupPrice').textContent = '\u20ac ' + p.price.toFixed(2);
+
+      productPopupOverlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+
+      // Chiude anche la barra di ricerca
+      closeSearch();
+    }
+
+    function closeProductPopupDirect() {
+      productPopupOverlay.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    function closeProductPopup(e) {
+      // Chiude solo se si clicca sull'overlay, non sul popup stesso
+      if (e.target === productPopupOverlay) {
+        closeProductPopupDirect();
+      }
+    }
+
+    // Chiude il popup con Escape (senza chiudere il sito intero se admin è aperto)
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && productPopupOverlay.classList.contains('open')) {
+        closeProductPopupDirect();
+      }
+    });
+
+    // ===== IMAGE LIGHTBOX =====
+    const lightboxOverlay = document.getElementById('lightboxOverlay');
+    const lightboxImg = document.getElementById('lightboxImg');
+
+    function openLightbox(imgEl) {
+      lightboxImg.src = imgEl.src;
+      lightboxImg.alt = imgEl.alt;
+      lightboxOverlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      lightboxOverlay.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && lightboxOverlay.classList.contains('open')) {
+        closeLightbox();
+      }
+    });
+
+    // ============================================
+    // ===== AREA ADMIN JAVASCRIPT CONTROLLER =====
+    // ============================================
+    const ADMIN_PASSWORD = "filmec1950";
+    let isAdminAuthenticated = false;
+
+    // Monitora il cambio hash dell'URL per gestire la navigazione dell'admin
+    window.addEventListener('hashchange', checkHashRoute);
+    window.addEventListener('DOMContentLoaded', checkHashRoute);
+
+    function checkHashRoute() {
+      const hash = window.location.hash;
+      if (hash === '#admin') {
+        const isAuth = sessionStorage.getItem('filmec_admin_auth') === 'true';
+        if (isAuth) {
+          isAdminAuthenticated = true;
+          openAdminDashboard();
+        } else {
+          openAdminLoginModal();
+        }
+      } else {
+        // Se si esce dal hash admin, chiude i pannelli admin
+        document.getElementById('adminPanel').classList.remove('open');
+        document.getElementById('adminLoginModal').classList.remove('open');
+        document.body.style.overflow = '';
+      }
+    }
+
+    // Modal Login Gestori
+    function openAdminLoginModal() {
+      document.getElementById('adminLoginModal').classList.add('open');
+      document.getElementById('adminPassword').value = '';
+      document.getElementById('loginErrorMessage').style.display = 'none';
+      setTimeout(() => document.getElementById('adminPassword').focus(), 150);
+    }
+
+    function closeAdminLogin() {
+      document.getElementById('adminLoginModal').classList.remove('open');
+      if (window.location.hash === '#admin') {
+        window.location.hash = '';
+      }
+    }
+
+    function submitAdminLogin() {
+      const passwordInput = document.getElementById('adminPassword').value;
+      if (passwordInput === ADMIN_PASSWORD) {
+        isAdminAuthenticated = true;
+        sessionStorage.setItem('filmec_admin_auth', 'true');
+        document.getElementById('adminLoginModal').classList.remove('open');
+        openAdminDashboard();
+      } else {
+        document.getElementById('loginErrorMessage').style.display = 'block';
+        document.getElementById('adminPassword').focus();
+      }
+    }
+
+    // Aggiunge invio con il tasto Enter nel form di login
+    document.getElementById('adminPassword').addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') submitAdminLogin();
+    });
+
+    // Dashboard Admin
+    function openAdminDashboard() {
+      document.getElementById('adminPanel').classList.add('open');
+      document.body.style.overflow = 'hidden'; // Impedisce lo scroll del sito principale sotto la dashboard
+      renderAdminProducts();
+    }
+
+    function closeAdminDashboard() {
+      document.getElementById('adminPanel').classList.remove('open');
+      document.body.style.overflow = '';
+      window.location.hash = '';
+    }
+
+    // Rende dinamici i dati della dashboard e della lista dei prodotti
+    function renderAdminProducts() {
+      const listContainer = document.getElementById('adminProductsList');
+      const searchQuery = document.getElementById('adminSearchInput').value.trim().toLowerCase();
+      const catFilter = document.getElementById('adminCategorySelect').value;
+
+      // Filtri
+      let filtered = products;
+      if (searchQuery) {
+        filtered = filtered.filter(p =>
+          p.name.toLowerCase().includes(searchQuery) ||
+          p.code.toLowerCase().includes(searchQuery) ||
+          p.description.toLowerCase().includes(searchQuery)
+        );
+      }
+      if (catFilter !== 'ALL') {
+        filtered = filtered.filter(p => p.category === catFilter);
+      }
+
+      // Statistiche
+      const total = products.length;
+      const active = products.filter(p => p.visible !== false).length;
+      const hidden = products.filter(p => p.visible === false).length;
+
+      document.getElementById('statTotalProducts').innerText = total;
+      document.getElementById('statActiveProducts').innerText = active;
+      document.getElementById('statHiddenProducts').innerText = hidden;
+
+      if (filtered.length === 0) {
+        listContainer.innerHTML = `
+          <tr>
+            <td colspan="7" style="text-align: center; padding: 40px; color: var(--text-light);">
+              Nessun prodotto corrisponde ai criteri di ricerca.
+            </td>
+          </tr>
+        `;
+        return;
+      }
+
+      // Iniezione righe tabella
+      listContainer.innerHTML = filtered.map(p => `
+        <tr>
+          <td>
+            <img src="${p.image}" alt="${p.name}" class="admin-prod-img-thumb">
+          </td>
+          <td><strong style="color:var(--gold-light); font-family:monospace;">${p.code}</strong></td>
+          <td>
+            <div class="admin-prod-name">${p.name}</div>
+            <div class="admin-prod-desc">${p.description || 'Nessuna descrizione.'}</div>
+          </td>
+          <td>
+            <span class="admin-category-badge">${p.category}</span>
+          </td>
+          <td>
+            <span class="admin-prod-price">&euro; ${p.price.toFixed(2)}</span>
+          </td>
+          <td>
+            <label class="switch-container">
+              <input type="checkbox" ${p.visible !== false ? 'checked' : ''} onchange="toggleProductVisibility('${p.code}')">
+              <span class="switch-slider"></span>
+            </label>
+          </td>
+          <td>
+            <div class="admin-action-buttons">
+              <button class="btn-icon-action edit-btn" onclick="openEditProductModal('${p.code}')" title="Modifica">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 20h9M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+                </svg>
+              </button>
+              <button class="btn-icon-action delete-btn" onclick="triggerDeleteProduct('${p.code}')" title="Elimina">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="3 6 5 6 21 6"/>
+                  <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+                </svg>
+              </button>
+            </div>
+          </td>
+        </tr>
+      `).join('');
+    }
+
+    function filterAdminProducts() {
+      renderAdminProducts();
+    }
+
+    // Toggle visibilità rapido dello switch
+    function toggleProductVisibility(code) {
+      const idx = products.findIndex(p => p.code === code);
+      if (idx !== -1) {
+        products[idx].visible = products[idx].visible === undefined ? false : !products[idx].visible;
+        saveProductsToStorage(products);
+        renderAdminProducts();
+      }
+    }
+
+    // Modale Gestione Prodotto (Aggiunta/Modifica)
+    function openAddProductModal() {
+      document.getElementById('productForm').reset();
+      document.getElementById('formOriginalCode').value = '';
+      document.getElementById('productModalTitle').innerText = 'Aggiungi Nuovo Prodotto';
+      document.getElementById('prodCode').disabled = false;
+      document.getElementById('prodImageSelect').value = 'assets/prod-fili-cucito.png';
+      document.getElementById('prodImageCustom').style.display = 'none';
+      document.getElementById('prodVisible').checked = true;
+      document.getElementById('productFormModal').classList.add('open');
+    }
+
+    function openEditProductModal(code) {
+      const p = products.find(prod => prod.code === code);
+      if (!p) return;
+
+      document.getElementById('productForm').reset();
+      document.getElementById('formOriginalCode').value = p.code;
+      document.getElementById('productModalTitle').innerText = `Modifica Prodotto: ${p.code}`;
+
+      document.getElementById('prodCode').value = p.code;
+      document.getElementById('prodCode').disabled = true; // Impedisce modifica diretta del codice univoco
+      document.getElementById('prodName').value = p.name;
+      document.getElementById('prodCategory').value = p.category;
+      document.getElementById('prodPrice').value = p.price;
+      document.getElementById('prodDesc').value = p.description || '';
+      document.getElementById('prodVisible').checked = p.visible !== false;
+
+      // Gestisce selezione percorso immagine
+      const presetOptions = Array.from(document.getElementById('prodImageSelect').options).map(o => o.value);
+      if (presetOptions.includes(p.image)) {
+        document.getElementById('prodImageSelect').value = p.image;
+        document.getElementById('prodImageCustom').style.display = 'none';
+      } else {
+        document.getElementById('prodImageSelect').value = 'CUSTOM';
+        document.getElementById('prodImageCustom').value = p.image;
+        document.getElementById('prodImageCustom').style.display = 'block';
+      }
+
+      document.getElementById('productFormModal').classList.add('open');
+    }
+
+    function closeProductModal() {
+      document.getElementById('productFormModal').classList.remove('open');
+    }
+
+    function syncProductImageInput() {
+      const selectVal = document.getElementById('prodImageSelect').value;
+      const customInput = document.getElementById('prodImageCustom');
+      if (selectVal === 'CUSTOM') {
+        customInput.style.display = 'block';
+        customInput.required = true;
+      } else {
+        customInput.style.display = 'none';
+        customInput.required = false;
+      }
+    }
+
+    // Salva il prodotto (Invia form)
+    function saveProduct(e) {
+      e.preventDefault();
+
+      const originalCode = document.getElementById('formOriginalCode').value;
+      const code = document.getElementById('prodCode').value.trim().toUpperCase();
+      const name = document.getElementById('prodName').value.trim();
+      const category = document.getElementById('prodCategory').value;
+      const price = parseFloat(document.getElementById('prodPrice').value);
+      const desc = document.getElementById('prodDesc').value.trim();
+      const visible = document.getElementById('prodVisible').checked;
+
+      // Estrae percorso immagine
+      const imgSelect = document.getElementById('prodImageSelect').value;
+      const image = imgSelect === 'CUSTOM' ? document.getElementById('prodImageCustom').value.trim() : imgSelect;
+
+      const productData = {
+        code,
+        name,
+        category,
+        price,
+        description: desc,
+        image: image || 'assets/prod-fili-cucito.png',
+        visible
+      };
+
+      if (!originalCode) {
+        // Aggiunta Nuovo Prodotto
+        const exists = products.some(p => p.code === code);
+        if (exists) {
+          alert('Errore: Un prodotto con questo codice esiste già! Scegli un codice univoco.');
+          return;
+        }
+        products.push(productData);
+      } else {
+        // Modifica Prodotto Esistente
+        const idx = products.findIndex(p => p.code === originalCode);
+        if (idx !== -1) {
+          products[idx] = productData;
+        }
+      }
+
+      saveProductsToStorage(products);
+      closeProductModal();
+      renderAdminProducts();
+    }
+
+    // Elimina Prodotto
+    function triggerDeleteProduct(code) {
+      const p = products.find(prod => prod.code === code);
+      if (!p) return;
+
+      const confirmDelete = confirm(`Sei sicuro di voler eliminare definitivamente il prodotto "${p.name}" (${p.code})?`);
+      if (confirmDelete) {
+        products = products.filter(prod => prod.code !== code);
+        saveProductsToStorage(products);
+        renderAdminProducts();
+      }
+    }
+
+    // Esporta database JSON scaricando un file locale
+    function exportProductsJSON() {
+      // Clona i dati rimuovendo gli stati temporanei se non necessari o salvando il database pulito
+      const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(products, null, 2));
+      const downloadAnchor = document.createElement('a');
+      downloadAnchor.setAttribute("href", dataStr);
+      downloadAnchor.setAttribute("download", "products.json");
+      document.body.appendChild(downloadAnchor);
+      downloadAnchor.click();
+      downloadAnchor.remove();
+    }
+
+    // Importa database JSON
+    function openImportModal() {
+      document.getElementById('importTextarea').value = '';
+      document.getElementById('importErrorMessage').style.display = 'none';
+      document.getElementById('importModal').classList.add('open');
+    }
+
+    function closeImportModal() {
+      document.getElementById('importModal').classList.remove('open');
+    }
+
+    function submitImportJSON() {
+      const jsonText = document.getElementById('importTextarea').value.trim();
+      const errorMsg = document.getElementById('importErrorMessage');
+
+      if (!jsonText) {
+        errorMsg.innerText = 'Il campo è vuoto. Inserisci del codice JSON valido.';
+        errorMsg.style.display = 'block';
+        return;
+      }
+
+      try {
+        const parsed = JSON.parse(jsonText);
+        // Validazione minima formato database
+        if (!Array.isArray(parsed)) {
+          throw new Error("Il JSON deve essere un array di prodotti.");
+        }
+        
+        // Verifica dei campi obbligatori di base
+        const isValid = parsed.every(p => p.code && p.name && p.category && p.price !== undefined);
+        if (!isValid) {
+          throw new Error("Ogni prodotto deve contenere almeno i campi: code, name, category, price.");
+        }
+
+        // Salva i prodotti ed aggiorna
+        saveProductsToStorage(parsed);
+        closeImportModal();
+        renderAdminProducts();
+        alert('Database prodotti importato e aggiornato con successo nel browser!');
+      } catch (err) {
+        errorMsg.innerText = `Errore di importazione: ${err.message || 'Controlla la sintassi JSON.'}`;
+        errorMsg.style.display = 'block';
+      }
+    }
+
+    // Ripristina ai dati predefiniti statici
+    function triggerResetToDefault() {
+      const confirmReset = confirm(
+        "ATTENZIONE!\nQuesta operazione eliminerà TUTTI i prodotti aggiunti e le modifiche apportate ai prezzi e alle visibilità, ripristinando il catalogo aziendale predefinito.\n\nVuoi procedere?"
+      );
+      if (confirmReset) {
+        resetProductsToDefault();
+        renderAdminProducts();
+        alert("Il catalogo dei prodotti è stato ripristinato con successo ai valori originali!");
+      }
+    }
+  </script>
+
+</body>
+
+</html>
