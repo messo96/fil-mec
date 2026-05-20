@@ -1788,6 +1788,7 @@ a {
   position: absolute;
   inset: 0;
   background: linear-gradient(to bottom, transparent 50%, rgba(58, 42, 46, 0.35) 100%);
+  pointer-events: none;
 }
 
 .product-popup-badge {
