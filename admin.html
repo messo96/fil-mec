@@ -175,8 +175,8 @@
         </div>
         <div class="form-row">
           <div class="form-group half">
-            <label>Prezzo (€) *</label>
-            <input type="number" id="prodPrice" step="0.01" min="0" placeholder="0.00" required>
+            <label>Prezzo (€)</label>
+            <input type="number" id="prodPrice" step="0.01" min="0" placeholder="Lascia vuoto se non applicabile">
           </div>
           <div class="form-group half">
             <label>Immagine Predefinita</label>
@@ -490,7 +490,7 @@
     document.getElementById('prodCode').disabled = true;
     document.getElementById('prodName').value = p.name;
     document.getElementById('prodCat').value = p.category;
-    document.getElementById('prodPrice').value = p.price;
+    document.getElementById('prodPrice').value = (p.price !== null && p.price !== undefined) ? p.price : '';
     document.getElementById('prodDesc').value = p.description || '';
     document.getElementById('prodVisible').checked = p.visible !== false;
     if (p.image && p.image.startsWith('data:')) {
@@ -540,7 +540,8 @@
     const code = document.getElementById('prodCode').value.trim().toUpperCase().replace(/[<>"'&]/g, '');
     const name = document.getElementById('prodName').value.trim().substring(0, 200);
     const category = document.getElementById('prodCat').value;
-    const price = Math.max(0, parseFloat(document.getElementById('prodPrice').value) || 0);
+    const priceRaw = document.getElementById('prodPrice').value;
+    const price = priceRaw !== '' ? Math.max(0, parseFloat(priceRaw) || 0) : null;
     const desc = document.getElementById('prodDesc').value.trim().substring(0, 1000);
     const visible = document.getElementById('prodVisible').checked;
     const imgSelectVal = document.getElementById('prodImgSelect').value;

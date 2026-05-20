@@ -320,7 +320,7 @@
         <h2 class="product-popup-title" id="popupTitle"></h2>
         <p class="product-popup-description" id="popupDesc"></p>
         <div class="product-popup-footer">
-          <div class="product-popup-price">
+          <div class="product-popup-price" id="popupPriceBlock">
             <span class="product-popup-price-label">Prezzo</span>
             <span class="product-popup-price-value" id="popupPrice"></span>
           </div>
@@ -444,7 +444,7 @@
               <h4 class="search-result-name">${highlightMatch(p.name, query)}</h4>
               <p class="search-result-desc">${p.description}</p>
               <div class="search-result-meta">
-                <span class="search-result-price">&euro; ${p.price.toFixed(2)}</span>
+                ${p.price !== undefined && p.price !== null && p.price !== '' ? `<span class="search-result-price">&euro; ${parseFloat(p.price).toFixed(2)}</span>` : ''}
                 <span class="search-result-code">${p.code}</span>
               </div>
             </div>
@@ -473,7 +473,13 @@
       document.getElementById('popupCode').textContent = p.code;
       document.getElementById('popupTitle').textContent = p.name;
       document.getElementById('popupDesc').textContent = p.description || 'Nessuna descrizione disponibile.';
-      document.getElementById('popupPrice').textContent = '\u20ac ' + p.price.toFixed(2);
+      const priceBlock = document.getElementById('popupPriceBlock');
+      if (p.price !== undefined && p.price !== null && p.price !== '') {
+        document.getElementById('popupPrice').textContent = '\u20ac ' + parseFloat(p.price).toFixed(2);
+        priceBlock.style.display = '';
+      } else {
+        priceBlock.style.display = 'none';
+      }
 
       productPopupOverlay.classList.add('open');
       document.body.style.overflow = 'hidden';
