@@ -271,7 +271,9 @@
               <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
               <circle cx="12" cy="10" r="3" />
             </svg>
-            <span>Via Quinto Bucci, 323<br>c/o Centro Commerciale Coming<br>47521 Cesena (FC) Italia</span>
+            <a href="#" onclick="openMaps(); return false;" style="color:inherit; text-decoration:none; cursor:pointer;" aria-label="Apri in Maps">
+              <span>Via Quinto Bucci, 323<br>c/o Centro Commerciale Coming<br>47521 Cesena (FC) Italia</span>
+            </a>
           </div>
           <div class="footer-contact-item">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -521,6 +523,22 @@
     function closeLightbox() {
       lightboxOverlay.classList.remove('open');
       document.body.style.overflow = '';
+    }
+
+    // ===== MAPS LINK (Apple Maps su iOS, Google Maps altrove) =====
+    function openMaps() {
+      const address = 'Via+Quinto+Bucci+323,+47521+Cesena+FC,+Italia';
+      const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+                    (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+      const isMac = /Macintosh/.test(navigator.userAgent) && !isIOS;
+      if (isIOS) {
+        window.open('https://maps.apple.com/?q=' + address, '_blank');
+      } else if (isMac) {
+        // Su Mac Safari apre Apple Maps, altri browser aprono Google Maps
+        window.open('https://maps.apple.com/?q=' + address, '_blank');
+      } else {
+        window.open('https://www.google.com/maps/search/?api=1&query=' + address, '_blank');
+      }
     }
 
     document.addEventListener('keydown', (e) => {
